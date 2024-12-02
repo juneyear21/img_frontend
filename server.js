@@ -72,7 +72,7 @@ app.get('/', (req, res) => {
 
 // Set webhook (run this once to configure the bot)
 async function setWebhook() {
-  const webhookUrl = `https://tel-img-api-endpoint.onrender.com/webhook`; // Replace with your public URL
+  const webhookUrl = `https://img-frontend-z3ab.onrender.com/webhook`; // Replace with your public URL
   try {
     const response = await axios.get(`https://api.telegram.org/bot${botToken}/setWebhook?url=${webhookUrl}`);
     console.log('Webhook set successfully:', response.data);
